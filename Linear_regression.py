@@ -1,3 +1,4 @@
+#Lesson1 of Andrew Ng Machine Leaning Course 
 import numpy as np
 
 class LinearRegression:
