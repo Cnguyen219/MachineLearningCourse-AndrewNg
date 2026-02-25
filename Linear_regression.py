@@ -1,12 +1,12 @@
-#Lesson1 of Andrew Ng Machine Leaning Course 
+# Lesson1 of Andrew Ng Machine Leaning Course 
 import numpy as np
 
 class LinearRegression:
     def __init__(self, learning_rate=0.01, iterations=1000):
-        # learning_rate (alpha) controls how big of a step we take during gradient descent
+        # Here the learning_rate controls how big of a step we take during gradient descent
         self.learning_rate = learning_rate
         
-        # Number of times we update w and b
+        # This is the number of times we update w and b
         self.iterations = iterations
         
         # Initialize model parameters (slope and intercept)
@@ -18,7 +18,7 @@ class LinearRegression:
         Computes Mean Squared Error cost:
         J(w,b) = (1 / 2m) * sum((prediction - y)^2)
         """
-        m = len(X)  # number of training examples
+        m = len(X)  # number of examples
         
         # Compute predictions using current w and b
         predictions = self.w * X + self.b
@@ -26,7 +26,7 @@ class LinearRegression:
         # Compute squared errors
         errors = predictions - y
         
-        # Compute cost
+        # Compute the costs
         cost = (1 / (2 * m)) * np.sum(errors ** 2)
         
         return cost
@@ -35,7 +35,7 @@ class LinearRegression:
         """
         Performs Gradient Descent to learn w and b
         """
-        m = len(X)  # number of training examples
+        m = len(X)  # number of  examples
 
         for _ in range(self.iterations):
             
