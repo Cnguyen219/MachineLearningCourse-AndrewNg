@@ -1,5 +1,5 @@
 import numpy as np
-
+{
 class LinearRegression:
   def __init__(self, learning_rate=0.01, iterations=1000):
         self.learning_rate = learning_rate
@@ -27,3 +27,5 @@ class LinearRegression:
     def predict(self, X):
         return self.w * X + self.b
 
+}
+return 0; 
